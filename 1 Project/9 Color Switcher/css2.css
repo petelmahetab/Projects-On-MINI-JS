@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+  
+}
+
+h2{
+  margin: 160px;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 0vh; */
+}
+.boxes{
+   width:100px;
+   height: 100px;
+   border: 2px solid black;
+   margin:10px;
+}

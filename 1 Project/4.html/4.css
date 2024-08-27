@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.drum-stick {
+    width: 200px;
+    height: 20px;
+    background-color: #381c09; /* Wood color */
+    border-radius: 10px;
+    position: relative;
+    transform-origin: left center;
+}
+
+.drum-stick::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: #d2b48c;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 170px;
+}

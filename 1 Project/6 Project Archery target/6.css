@@ -1,0 +1,49 @@
+:root{
+    --first-ring:#282828;
+    --secong-ring:#2892f9;
+    --third-rign:#fb2f27;
+    --fourth-eye:#fdfe29;
+}
+html,body{
+    margin: 0;
+    padding:0;
+    
+}
+
+.centerdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.rings .ring{
+    display: grid;
+    place-items: center;
+    box-shadow: 20px 20px 30px rgb(54, 12, 12);
+}
+
+.ring{
+    border-radius: 50%;
+    
+}
+.ring1{
+    height: 400px;
+    width:400px;
+    background: var(--first-ring);
+}
+
+.ring2{
+    height: 300px;
+    width:300px;
+    background: var(--secong-ring);
+}
+.ring3{
+    height: 200px;
+    width:200px;
+    background: var(--third-rign);
+}
+.eye{
+    height: 100px;
+    width:100px;
+    background: var(--fourth-eye);
+}

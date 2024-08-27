@@ -1,0 +1,53 @@
+html,body{
+    margin:0;
+    padding: 0;
+}
+
+:root{
+    --back-color: rgb(44, 25, 11);
+}
+
+.container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   border: 2px solid black;
+}
+h1{
+    width:30%;
+    height: 15%;
+    border:2px solid black;
+    text-align: start;
+    padding-top: 50px;
+    padding-left: 80px;
+    border-radius: 5px;
+    color:black;
+}
+h1::after{
+    content: "";
+    animation: identifier infinite 6s;
+    background: var(--back-color);
+    padding: auto;
+    border-radius: 5px;
+    color:white;
+    width:50px;
+}
+
+@keyframes identifier {
+    0%{
+      content: "Great Person";
+    }
+    25%{
+        content: "Positive Thinker";
+    }
+    50%{
+        content: "Innovative ";
+    }
+    75%{
+        content: "Best Human Being";
+    }
+    100%{
+        content: "So On..!";
+    }
+}
