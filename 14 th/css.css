@@ -1,0 +1,35 @@
+html,body{
+    margin: 0;
+    padding:0;
+    background-color: rgb(31, 29, 29);
+}
+h1{
+    text-align: center;
+}
+:root{
+    --black:#000000;
+    --red:red;
+    --yellow:#FFCE00;
+    --height:180px;
+}
+.flag-Germany{
+    height: var(--height);
+    width: calc(var(--height)*5/3);
+    background-color: aquamarine;
+  margin-left: 30px;
+    flex-direction: column;
+    /* display: grid; */
+    display: flex;
+}
+.strips{
+    flex-grow: 1;
+}
+.black{
+    background: var(--black);
+}
+.red{
+    background: var(--red);
+}
+.yellow{
+    background: var(--yellow);
+}
