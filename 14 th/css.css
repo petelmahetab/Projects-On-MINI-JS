@@ -16,6 +16,8 @@ h1{
     --chocolate:rgb(116, 2, 2);
     --blue:#0269A6;
     --lightYellow:#b3910c;
+    --orange:rgb(197, 76, 46);
+    --green:rgb(9, 151, 9);
     /* --width: */
 }
 .flag-Germany{
@@ -83,7 +85,7 @@ position: relative;
 /* 4 Flag */
 .flag-Sweden{
   height: 180px;
-  width:calc(220px * 8/5);
+  width:calc(200px * 8/5);
   background: var(--blue);
   margin-left: 40%;
   display: flex;
@@ -103,4 +105,38 @@ position: relative;
     background: var(--lightYellow);
     position: absolute;
     margin-left:90px;
+}
+
+/* 5 Flag */
+.flag-Niger{
+    height: var(--height);
+    width:calc(200px* 8/5);
+    background: var(--white);
+    margin-left: 30px;
+}
+.orange{
+    height: 35%;
+    width:100%;
+    background: var(--orange);
+}
+.white{
+   height: 35%;
+   width: 100%;
+   background: var(--white);
+   align-self: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.cir{
+    height:60px;
+    width:60px;
+    background: var(--orange);
+     border-radius: 50%;
+}
+.green{
+    height: 35%;
+    width:100%;
+    background: var(--green);
+    align-self: baseline;
 }
