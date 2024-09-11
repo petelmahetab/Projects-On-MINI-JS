@@ -3,7 +3,7 @@ body,html{
     padding: 0;
     background: #000;
     color:#c9d1d9;
-    text-align: center;
+    text-align: center;    
 }
 
 :root{
@@ -24,18 +24,45 @@ body,html{
     max-width: 400px;
   margin: 1rem auto;
  background: var(--profile-bg);
-
+  height: 80%;
+  padding-top: 30px;
+  margin-top: 200px;
 }
 
 .prof-content{
-    width:100%;
+    /* width:100%; */
  padding: 1em 2em;
 }
-.pro-img { 
+img{
+ width: 250px;
     border-radius: 50%;
+}
+.pro-img { 
+    /* border-radius: 50%; */
     align-items: center;
     border: 2px solid  var(--profile-bg);
     color: var(--profile-color);
     /* background:; */
+}
+h2{
+    margin: 0;
+}
+h3{
+    font-weight:lighter;
+}
+.pro-details button{
+   width: 50%;
+   background: var(--btn-bg);
+   border: var(--btn-border);
+   height: 10%;
+   border-radius: 6px;
+   padding: 0.25rem 0;
+   font-family: var(--font-main);
+   font-family: inherit;
+}
+.pro-details button:hover{
+    background: var(--btn-border);
+    /* background-color: var(--btn-bg); */
+    border-radius: 10px;
 
 }
