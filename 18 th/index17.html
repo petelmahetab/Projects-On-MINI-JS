@@ -6,25 +6,64 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <h1 class="flex items-center justify-center h-full text-5xl underline-offset-1 my-4">Ace Card</h1>
+<body class="bg-slate-800 min-h-screen flex flex-col items-center justify-center">
+    <h1 class="flex  items-center justify-center h-full text-5xl underline-offset-1 my-4 text-white">Card's</h1>
 
-    <div class="flex items-center justify-center h-screen">
-        <div class="w-1/5 my-36 h-2/3 mx-auto p-6 bg-gray-100 rounded-lg border-2 border-black shadow-lg relative">
-            <!-- Left corner DIV -->
-            <div class="absolute top-5 left-5 text-black">
-                <h1 class="text-4xl font-bold">A</h1>
-                <h1 class="fas fa-star  text-5xl">&spades;</h1>
+    <!-- Parent DiV -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 cursor-pointer">
+        <!-- For First Card -->
+        <div class="flex items-center justify-center ">
+            <div class="w-72 h-2/3 p-6 bg-gray-100 rounded-lg border-2 border-black shadow-inner relative">
+                <!-- Left corner DIV -->
+                <div class="absolute top-5 left-5 text-black">
+                    <h1 class="text-4xl font-bold">A</h1>
+                    <h1 class="fas fa-star  text-5xl">&spades;</h1>
+                </div>
+                <!-- Center Spades DIV -->
+                <div class="flex items-center justify-center h-full">
+                    <h1 class="fas fa-star text-8xl"> &spades;
+                    </h1>
+                </div>
+                <!-- Bottom Right DIV Inverted-->
+                <div class="absolute bottom-4 right-4 transfrom rotate-180">
+                    <h1 class="text-4xl font-bold">A</h1>
+                    <h1 class="fas fa-star text-5xl">&spades;</h1>
+                </div>
             </div>
-            <!-- Center Spades DIV -->
-            <div class="flex items-center justify-center h-full">
-                <h1 class="fas fa-star text-8xl"> &spades;
-                </h1>
-            </div>
-            <!-- Bottom Right DIV Inverted-->
-            <div class="absolute bottom-4 right-4 transfrom rotate-180">
-                <h1 class="text-4xl font-bold">A</h1>
-                <h1 class="fas fa-star text-5xl">&spades;</h1>
+        </div>
+
+        <!-- For Second Card -->
+        <div class="flex items-center justify-center h-screen shadow-indigo-100   ">
+            <div class="w-72 h-2/3 p-6 ml-10 bg-gray-100 rounded-lg border-2 border-black shadow-inner relative">
+                <!-- Left corner DIV -->
+                <div class="absolute top-5 left-5 text-black">
+                    <h1 class="text-4xl font-bold text-red-700">4</h1>
+                    <h1 class="fas fa-star  text-5xl text-red-700">&hearts;</h1>
+                </div>
+                <!-- Center Spades DIV -->
+                <div class="grid grid-cols-2 grid-rows-2 justify-items-center items-center w-full h-full">
+                    <!-- 2x2 Heart Matrix -->
+                    <div class="text-red-700 text-8xl">
+                        <h1>&hearts;</h1>
+                    </div>
+                    <div class="text-red-700 text-8xl">
+                        <h1>&hearts;</h1>
+                    </div>
+                         
+                    <div class="text-red-700 text-8xl transform rotate-180">
+                        <h1>&hearts;</h1>
+                    </div>
+                    <div class="text-red-700 text-8xl transform rotate-180">
+                        <h1>&hearts;</h1>
+                    </div>
+                </div>
+        
+                
+                <!-- Bottom Right DIV Inverted-->
+                <div class="absolute bottom-4 right-4 transfrom rotate-180">
+                    <h1 class="text-4xl font-bold text-red-700">4</h1>
+                    <h1 class="fas fa-star text-5xl text-red-700">&hearts;</h1>
+                </div>
             </div>
         </div>
     </div>
