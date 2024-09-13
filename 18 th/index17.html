@@ -4,14 +4,17 @@
 <head>
     <title>Ace of Playing Card</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="Favicon8.png">
 </head>
 
 <body class="bg-slate-800 min-h-screen flex flex-col items-center justify-center">
     <h1 class="flex  items-center justify-center h-full text-5xl underline-offset-1 my-4 text-white">Card's</h1>
 
     <!-- Parent DiV -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 cursor-pointer">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 cursor-pointer">
+
         <!-- For First Card -->
+        <!-- Spades  -->
         <div class="flex items-center justify-center ">
             <div class="w-72 h-2/3 p-6 bg-gray-100 rounded-lg border-2 border-black shadow-inner relative">
                 <!-- Left corner DIV -->
@@ -21,7 +24,7 @@
                 </div>
                 <!-- Center Spades DIV -->
                 <div class="flex items-center justify-center h-full">
-                    <h1 class="fas fa-star text-8xl"> &spades;
+                    <h1 class="fas fa-star text-9xl"> &spades;
                     </h1>
                 </div>
                 <!-- Bottom Right DIV Inverted-->
@@ -33,6 +36,7 @@
         </div>
 
         <!-- For Second Card -->
+        <!-- Heart -->
         <div class="flex items-center justify-center h-screen shadow-indigo-100   ">
             <div class="w-72 h-2/3 p-6 ml-10 bg-gray-100 rounded-lg border-2 border-black shadow-inner relative">
                 <!-- Left corner DIV -->
@@ -49,7 +53,7 @@
                     <div class="text-red-700 text-8xl">
                         <h1>&hearts;</h1>
                     </div>
-                         
+
                     <div class="text-red-700 text-8xl transform rotate-180">
                         <h1>&hearts;</h1>
                     </div>
@@ -57,8 +61,8 @@
                         <h1>&hearts;</h1>
                     </div>
                 </div>
-        
-                
+
+
                 <!-- Bottom Right DIV Inverted-->
                 <div class="absolute bottom-4 right-4 transfrom rotate-180">
                     <h1 class="text-4xl font-bold text-red-700">4</h1>
@@ -66,7 +70,97 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+        <!-- For Third Card -->
+        <!-- Diamond 8th -->
+        <div class="flex items-center justify-center h-screen shadow-indigo-100   ">
+            <div class="w-72 h-2/3 p-6 ml-10 bg-gray-100 rounded-lg border-2 border-black shadow-inner relative">
+                <!-- Left corner DIV -->
+                <div class="absolute top-5 left-5 text-black">
+                    <h1 class="text-4xl font-bold text-red-700">9</h1>
+                    <h1 class=" text-4xl  text-red-700 ">&diamondsuit;</h1>
+                </div>
+                <!-- Center Spades DIV -->
+                <div class="grid grid-cols-3 grid-rows-3 justify-items-center items-center w-full h-full shrink p-0">
+                    <!-- 2x2 Heart Matrix -->
+                    <div class="text-red-700 text-8xl">
+                        <h1>&diamondsuit;</h1>
+                    </div>
+                    <div class="text-red-700 text-8xl">
+                        <h1>&diamondsuit;</h1>
+                    </div>
+                    <div class="text-red-700 text-8xl">
+                        <h1>&diamondsuit;</h1>
+                    </div>
+                    <div class="text-red-700 text-8xl justify-items-center items-center">
+                        <h1>&diamondsuit;</h1>
+                    </div>
+                
+                    <div class="text-red-700 text-8xl">
+                        <h1>&diamondsuit;</h1>
+                    </div>
+                    <div class="text-red-700 text-8xl">
+                        <h1>&diamondsuit;</h1>
+                    </div>    
+                    <div class="text-red-700 text-8xl transform rotate-180">
+                        <h1>&diamondsuit;</h1>
+                    </div>
+                    <div class="text-red-700 text-8xl transform rotate-180">
+                        <h1>&diamondsuit;</h1>
+                    </div>
+                    
+                    <div class="text-red-700 text-8xl transform rotate-180">
+                        <h1>&diamondsuit;</h1>
+                    </div>
+                    
+                </div>
+
+
+                <!-- Bottom Right DIV Inverted-->
+                <div class="absolute bottom-4 right-4 transfrom rotate-180">
+                    <h1 class="text-4xl font-bold text-red-700">9</h1>
+                    <h1 class="fas fa-star text-4xl text-red-700">&diamondsuit;</h1>
+                </div>
+                
+            </div>
+        </div>
+
+
+        
+        <!-- For Fouth Card -->
+        <!-- Clubs Ace -->
+        <div class="flex items-center justify-center h-screen shadow-indigo-100   ">
+            <div class="w-72 h-2/3 p-6 ml-10 bg-gray-100 rounded-lg border-2 border-black shadow-inner relative">
+                <!-- Left corner DIV -->
+                <div class="absolute top-5 left-5 text-black">
+                    <h1 class="text-4xl font-bold text-black-700">A</h1>
+                    <h1 class=" text-4xl  text-black-700 ">&clubs;</h1>
+                </div>
+                <!-- Center Spades DIV -->
+                <div class="flex items-center justify-center h-full">
+                    <h1 class="fas fa-star text-9xl"> &clubs;
+                    </h1>
+                </div>
+                <!-- Bottom Right DIV Inverted-->
+                <div class="absolute bottom-4 right-4 transfrom rotate-180">
+                    <h1 class="text-4xl font-bold text-black-700">A</h1>
+                    <h1 class="fas fa-star text-4xl text-black-700">&clubs;</h1>
+                </div>
+                
+            </div>
+        </div>
     </div>
+
+  <div class="flex justify-evenly items-center w-full text-stone-50 text-center font-extrabold p-2 my-0">
+      <h1 ><a>Ace of Speades</a></h1>
+      <h1><a>4 th of Heart</a></h1>&nbsp;
+      <h1><a href="">9 th Diamond</a></h1>
+      <h1><a>Ace od Clubs</a></h1>
+  </div>
 </body>
 
 </html>
