@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Four of Hearts Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Progress Bar</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Adding custom animation */
+        @keyframes progress {
+            0% { width: 0%; background-color: red; }
+            25% { width: 25%; background-color: red; }
+            50% { width: 50%; background-color: violet; }
+            75% { width: 75%; background-color: yellow; }
+            100% { width: 100%; background-color: green; }
+        }
+    </style>
 </head>
-<body>
-   <h1 class="flex items-center justify-center h-full text-5xl underline-offset-1 my-4"></h1>
+<body class="bg-black p-20 flex justify-center items-center ">
+
+    <div class="w-1/2 bg-gray-300  rounded-full h-10">
+        <!-- Progress bar with dynamic color change -->
+        <div class="h-10 rounded-full" style="animation: progress 5s linear forwards;"></div>
+        <h1 class="text-center text-lg text-white">Progress Bar</h1>
+    </div>
+
 </body>
 </html>
