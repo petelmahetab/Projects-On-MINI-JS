@@ -5,28 +5,154 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <title>Document</title>
     <!-- <title>Basefont tag</title>   -->
-    <basefont color="blue" size="5" face="arial">  
+    <basefont color="blue" size="5" face="arial">
+    <style>
+        body {
+            text-align: center;
+            color: white;
+            background-color: rgb(36, 34, 34);
+            list-style: none;
+        }
+
+        bdi {
+            font-size: 25px;
+            color: rgb(137, 170, 15);
+            font-size: x-large;
+        }
+
+        kbd {
+            border: 1px solid rgb(255, 51, 0);
+            border-radius: 8px;
+            padding: 3px 5px;
+            margin: 2px;
+
+        }
+
+        progress {
+            width: 300px;
+            height: 30px;
+
+        }
+
+        rt {
+            font-size: 10px;
+            color: green;
+        }
+        h1{
+            height: 5vh;
+            width: 100%;
+            color: rgb(129, 56, 3);
+            text-transform: capitalize;
+            text-decoration-style: double;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Tries different 5 tag which i was not known before. -->
+    <!-- Tries different 10 tag which i was not known before. -->
+ <h1>&nbsp &nbsp 10 Tag's We should must to known</h1>
 
-    <!-- 1.Abbr tag :- Show abbrevation Form like www -->
-    <h2>Abbreviation tag example</h2>
-    <p><b>Hover mouse over the content and see the abbreviation</b></p>
-    <abbr title="Hyper Text Transfer protocol">HTTP</abbr>
+    <ol>
+        <!-- 1.Abbr tag :- Show abbrevation Form like www -->
 
-    <hr>
-    <!-- 2.Applete tag: HTML <applet> tag was used to embed the Java applet in an HTML document.  -->
-        <p>Example of Applet Tag</p>  
-        <applet code="Shapes.class" align="right" height="200" width="300">  
-         <b>Sorry! you need Java to see this</b>  </applet>
+        <li>
 
-<hr>
-         <!-- 3. BaseFont:- HTML <basefont> tag was used to specify the default value of font-size, color, and font-family for all content written within an HTML document. -->
-            <h2>Example of Basefont tag</h2>  
-<p>The basefornt tag is not supported in HTML5 use CSS to style the document</p>  
-            
+            <h2>Abbreviation tag example</h2>
+            <p><b>Hover mouse over the content and see the abbreviation</b></p>
+            <abbr title="Hyper Text Transfer protocol">HTTP</abbr>
+        </li>
+        <hr>
+        <!-- 2.Applete tag: HTML <applet> tag was used to embed the Java applet in an HTML document.  -->
+
+        <li>
+
+            <p>Example of Applet Tag(But this tag is not supported in HTML5)</p>
+            <applet code="Shapes.class" align="right" height="200" width="300">
+                <b>Sorry! you need Java to see this</b>
+            </applet>
+        </li>
+        <hr>
+        <!-- 3. BaseFont:- HTML <basefont> tag was used to specify the default value of font-size, color, and font-family for all content written within an HTML document. -->
+        <li>
+            <h2>Example of Basefont tag</h2>
+            <p>The basefornt tag is not supported in HTML5 use CSS to style the document</p>
+        </li>
+        <hr>
+        <!--  4. Mrquee:-> The Marquee HTML tag is a non-standard HTML element which is used to scroll a image or text horizontally or vertically.-->
+        <li>
+            <marquee width="50%" behavior="scroll" bgcolor="blue">
+                This is an example of a scroll marquee...
+
+            </marquee>
+        </li>
+        <hr>
+        <!-- 5.Canvas :-> The HTML canvas element provides HTML a bitmapped surface to work with. It is used to draw graphics on the web page -->
+        <li>
+            <canvas id="myCanvas1" width="300" height="100" style="border:2px solid;">
+                Your browser does not support the HTML5 canvas tag. this is used to create an graphics canvas using Js.
+            </canvas>
+        </li>
+
+        <hr>
+        <!-- 6.Bdi :-> HTML <bdi> tag stands for Bidirectional Isolate Element. It is used to inform the browser to isolate the span of text which may be formatted in opposite directions than the surrounding text. -->
+        <li>
+            <h2>Example of HTML bdi tag</h2>
+            <p>
+                This <bdi> ???? ????? </bdi> Content is written in Arabic language
+            </p>
+        </li>
+
+        <hr>
+        <!-- 7.Kbd:- > HTML <kbd> tag indicates the part of inline text which represents the user keyboard input, voice input, or any other text entry device input. -->
+        <li>
+            <h2>Example of Kbd tag</h2>
+            <p>If you are using MS document then you can use shortcut <kbd>ctrl + s</kbd> to save your current document.
+            </p>
+        </li>
+
+        <hr>
+        <!-- 8.Progess:-> HTML <progress> tag is used to display the progress of a task. It provides an easy way for web developers to create progress bar on the website. It is mostly used to show the progress of a file uploading on the web page. -->
+        <li>
+            <progress></progress>
+        </li>
+
+        <hr>
+
+        <!-- 9.Ruby:->HTML <ruby> tag is used to represent ruby annotations on the web page. Ruby annotations are useful if we want to show the pronunciation of East Asian characters like Chinese and Japanese Chinese. -->
+        <li>
+            <h1>Example of ruby tag</h1>
+            <p>East Asian Langugae Annotation</p>
+            <ruby>
+                大哥<rt>Big Brother</rt>
+            </ruby>
+
+            <p>Noraml Annotaion Representation of Expiry date</p>
+            <ruby>
+                2022<rp>(</rp>
+                <rt>Year</rt>
+                <rp>)</rp>
+                12<rp>(</rp>
+                <rt> Month</rt>
+                <rp>)</rp>
+                06<rp>(</rp>
+                <rt>Date</rt>
+                <rp>)</rp>
+            </ruby>
+        </li>
+
+        <hr>
+        <!-- 10.Wbr:->HTML <wbr> tag is used to specify a line break opportunity within an HTML document.
+
+Without wbr tag, it is very difficult to read a long single word or a sentence. Without wbr tag, single long word can wrap or not wrap at all, it creates problem for the layout of the page. -->
+        <li>
+            <h1>Example of wbr tag</h1>
+            <p>Here's what it looks like without using the <code style="color: red;">wbr</code> tag...<br />
+                <i> pneumonoultramicroscopicsilicovolcanoconiosis </i>
+            </p>
+            <p> It will look like this after using wbr tag. </p>
+            <i> pneu<wbr>monoultra<wbr>microsc<wbr>opicsili<wbr>covolcan<wbr>iosis</i>
+        </li>
+    </ol>
 </body>
 
 </html>
