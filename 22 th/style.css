@@ -46,7 +46,7 @@ h1{
     border: 2em solid var(--spinner-color);
     border-radius: 50%;
     border-left:2em solid var(--spinner-when-left);
-    animation: identifier 2.3s linear infinite;
+    animation: identifier 1s linear infinite;
     border-right: 2em solid var(--spinner-when-bottom);
 }
 
@@ -55,7 +55,7 @@ h1{
     justify-content: space-between;
     font-size: x-large;
     font-weight: 900;
-    
+
 }
 @keyframes identifier {
     100%{
