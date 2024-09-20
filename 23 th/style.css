@@ -8,16 +8,62 @@ html,body{
     height: 100%;
     width: 100%;
 }
+:root{
+    --Bg-color:rgb(51, 48, 48);
+    --Bg-button:rgb(64, 125, 128);
+}
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: var(--Bg-color);
+    gap:50px
+    
 }
 .cards{
     width: 300px;
-    height: 450px;
+    height: 400px;
     background-color: whitesmoke;
     border-radius: 5px;
-    box-shadow: 10px 10px 20px white;
+    padding: 20px;
+    text-align: center;
+}
+.cards:hover{
+    cursor: pointer;
+    filter:opacity(1);
+    box-shadow: 10px 10px 50px white;
+}
+.cards img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+ border-radius: 10px;
+}
+.cards h1{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.cards h5{
+    font-size: 20px;
+    color: rgb(87, 4, 4);
+    margin:20px
+}
+.cards button{
+    background-color: #dadada;
+    color: black;
+    font-weight: 800;
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    margin:5px;
+    cursor: pointer;
+}
+
+.cards #add{
+    background:var(--Bg-button);
+    color: white;
+    font-weight: 100;
 }
