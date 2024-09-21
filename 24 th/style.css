@@ -20,13 +20,14 @@ html,body{
     --grade5:#4f5bd5;
     --viewed:gray;
     --bg-main:#000;
-    --bg-live:red;
+    --bg-live:rgb(233, 24, 24);
+    /* --linear-gradient:to top right, var(--grade1), var(--grade2), var(--grade3), var(--grade4), var(--grade5); */
 }
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     color: white;
     font-family: var(--font);
     gap: 20px;
@@ -42,8 +43,34 @@ ul li{
 }
 
 .stories-menu img{
-     border-radius: 50%;
-     border:5px solid var(--bg-live);
-     padding: 8px;
-     background: white;
+    position: relative;
+     border-radius: 50%;    
+     border:5px solid var(--bg-main);
+   padding: 5px;
+}
+#center{
+    border:5px solid var(--viewed);
+    background: var(--bg-main);
+    padding: 5px;
+}
+
+/* For Live */
+.live::after{
+    content: "LIVE";
+    position: absolute;
+    background: var(--bg-live);
+    width: 30px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    top:66%;
+    left:47.5%;
+    
+}
+
+h1{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+    margin:20px;
 }
